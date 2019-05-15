@@ -6,7 +6,7 @@ min-height: 100%;
 }
 body {
   /* Margin bottom by footer height */
-margin-bottom: 60px;
+margin-bottom: 60px;	
 }
 
 /* ---------------- Heading styles ---------------- */
@@ -132,7 +132,6 @@ background-color: #f5f5f5;
 .footer td {
 	font-size: 100px;
 	width:20%;
-	color: black;
 	border-width: 1px;
 	border-color: black;
 	border-style: solid;
