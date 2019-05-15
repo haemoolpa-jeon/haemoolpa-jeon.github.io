@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Piggy Back</title>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+        <!-- Custom styles for this template -->
+        <link href="styles/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Begin page content -->
+        <div class="container">
+<!--             <div class="col-lg-12 py-1">
+				<div class="card progressChart">
+					<div class="card-body">
+						<canvas id="chDonut1"></canvas>
+					</div>
+				</div>
+			</div> -->
+        </div>
+
+        <footer class="footer">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="passiveNav"><a href="goals.html"><i class="fas fa-bullseye"></i></a></td>
+                        <td class="passiveNav"><a href="stats.html"><i class="fas fa-chart-bar"></i></a></td>
+                        <td class="activeNav"><a href="index.html"><i class="fas fa-home"></i></a></td>
+                        <td class="passiveNav"><a href="info.html"><i class="fas fa-info"></i></a></td>
+                        <td class="passiveNav"><a href="settings.html"><i class="fas fa-cog"></i></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" source="js/main.js">
+        	var colors = ['#000','#c3e6cb','#fff','#000'];
+			var donutOptions = {
+				cutoutPercentage: 70, 
+			};
+			var chDonutData1 = {
+				datasets: [
+					{
+						backgroundColor: colors.slice(0,4),
+						borderWidth: 0,
+						data: [20, 30, 20, 50]
+					}
+				]
+			};
+			var chDonut1 = document.getElementById("chDonut1");
+				if (chDonut1) {
+				new Chart(chDonut1, {
+					type: 'pie',
+					data: chDonutData1,
+					options: donutOptions
+				});
+			}
+        </script>
+    </body>
+</html>

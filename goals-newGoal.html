@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Piggy Back</title>
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<!-- Custom styles for this template -->
+		<link href="styles/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row heading">
+				<div class="text-center">
+					<h1>New Goal</h1>
+				</div>
+			</div>
+		</div>
+		<!-- Begin page content -->
+		<div class="container content contentWithHeading">
+			<form class="form-horizontal newGoalForm">
+				<fieldset>
+					<!-- Select Basic -->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="selectbasic">Type of Goal</label>
+						<div class="col-md-4">
+							<select id="selectbasic" name="selectbasic" class="form-control form-control-lg">
+								<option value="1">Short Term</option>
+								<option value="2">Long Term</option>
+							</select>
+						</div>
+					</div>
+					<!-- Text input-->
+					<div class="form-group">
+						<div class="col-md-4">
+							<input id="textinput" name="textinput" type="text" placeholder="Title" class="form-control form-control-lg input-md">
+						</div>
+					</div>
+					<!-- Button Drop Down -->
+					<div class="form-group">
+						<div class="col-md-4">
+							<div class="input-group">
+								<input id="buttondropdown" name="buttondropdown" class="form-control form-control-lg" placeholder="Amount to save" type="text">
+								<div class="input-group-btn">
+									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+									Currency
+									<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu pull-right">
+										<li><a href="#">AUD</a></li>
+										<li><a href="#">USD</a></li>
+										<li><a href="#">CAD</a></li>
+										<li><a href="#">YEN</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Select Basic -->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="selectbasic">Bank</label>
+						<div class="col-md-4">
+							<select id="selectbasic" name="selectbasic" class="form-control form-control-lg">
+								<option value="1">Commonwealth Bank</option>
+								<option value="2">NAB</option>
+								<option value="3">ING</option>
+								<option value="4">St. George</option>
+								<option value="5">Westpac</option>
+							</select>
+						</div>
+					</div>
+					<!-- Button Drop Down -->
+					<div class="form-group">
+						<div class="col-md-4">
+							<div class="input-group">
+								<input id="buttondropdown" name="buttondropdown" class="form-control form-control-lg" placeholder="Interest Rate %" type="text">
+								<div class="input-group-btn">
+									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+									Per
+									<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu pull-right">
+										<li><a href="#">Month</a></li>
+										<li><a href="#">Year</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Button -->
+					<div class="form-group">
+						<div class="col-md-4 text-center">
+							<button id="singlebutton" name="singlebutton" class="btn btn-primary"><a href="./goals.html">Submit</a></button>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		<footer class="footer">
+			<table>
+				<tbody>
+					<tr>
+						<td class="activeNav"><a href="goals.html"><i class="fas fa-bullseye"></i></a></td>
+						<td class="passiveNav"><a href="stats.html"><i class="fas fa-chart-bar"></i></a></td>
+						<td class="passiveNav"><a href="index.html"><i class="fas fa-home"></i></a></td>
+						<td class="passiveNav"><a href="info.html"><i class="fas fa-info"></i></a></td>
+						<td class="passiveNav"><a href="settings.html"><i class="fas fa-cog"></i></a></td>
+					</tr>
+				</tbody>
+			</table>
+		</footer>
+	</body>
+</html>
