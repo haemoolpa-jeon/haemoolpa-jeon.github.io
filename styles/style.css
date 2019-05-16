@@ -35,17 +35,12 @@ background-color: #ea8685;
 	background-color: #ea8685;
 }
 
-div.list-group-item:hover {
+div.list-group-item:hover, div.list-group-item:active, div.list-group-item:visited  {
 	background-color: #ea8685;
 	color : white;	
 }
 
-div.list-group-item:active {
-	background-color: #ea8685;
-	color : white;	
-}
-
-div.list-group-item:visited {
+a.list-group-item:hover, a.list-group-item:active, a.list-group-item:visited {
 	background-color: #ea8685;
 	color : white;	
 }
@@ -157,6 +152,10 @@ div.progress-bar {
 	color: white;
 }
 
+.form-group {
+	color : white;
+}
+
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
@@ -260,4 +259,10 @@ background-color: #ea8685;
 
 .info a {
 	padding:40px;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+	background-color : #f5cd79;
+	color : white;
+	border-color : #f5cd79;
 }
