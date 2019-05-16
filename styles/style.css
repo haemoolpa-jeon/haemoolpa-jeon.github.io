@@ -147,8 +147,12 @@ background-color: #f5f5f5;
 	color: #f5cd79;
 }
 
+#passive:active {
+
+}
+
 .fas {
-	color:black;
+	color:#303952;
 }
 
 /* ------------- Styling for pie chart ------------- */
