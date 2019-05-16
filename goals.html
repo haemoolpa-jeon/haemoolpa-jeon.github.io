@@ -18,8 +18,15 @@
 		</div>
 		<!-- Begin page content -->
 		<div class="container content contentWithHeading">
+			<div class="filter-nav">
+				<div class="btn-group filters">
+					<button id="filterAll" class="filterBtn btn btn-primary active" data-filter="">All</button>
+					<button id="filterShort" class="filterBtn btn btn-primary" data-filter="short">Short Term</button>
+					<button id="filterLong" class="filterBtn btn btn-primary" data-filter="long">Long Term</button>
+				</div>
+			</div>
 			<div class="list-group">
-				<a href="#" class="list-group-item list-group-item-action goal">
+				<a href="#" class="list-group-item list-group-item-action goal shortGoal">
 					<div class="d-flex w-100 justify-content-between">
 						<div class="row">
 							<div class="col-sm-6">
@@ -40,7 +47,7 @@
 					<p class="mb-1">Target Date: 12th of June</p>
 					<small>30 Days to go</small>
 				</a>
-				<a href="#" class="list-group-item list-group-item-action goal">
+				<a href="#" class="list-group-item list-group-item-action goal longGoal">
 					<div class="d-flex w-100 justify-content-between">
 						<div class="row">
 							<div class="col-sm-6">
@@ -61,7 +68,7 @@
 					<p class="mb-1">Target Date: 12th of June</p>
 					<small>30 Days to go</small>
 				</a>
-				<a href="#" class="list-group-item list-group-item-action goal">
+				<a href="#" class="list-group-item list-group-item-action goal shortGoal">
 					<div class="d-flex w-100 justify-content-between">
 						<div class="row">
 							<div class="col-sm-6">
@@ -82,7 +89,7 @@
 					<p class="mb-1">Target Date: 12th of June</p>
 					<small>30 Days to go</small>
 				</a>
-				<a href="#" class="list-group-item list-group-item-action goal">
+				<a href="#" class="list-group-item list-group-item-action goal shortGoal">
 					<div class="d-flex w-100 justify-content-between">
 						<div class="row">
 							<div class="col-sm-6">
@@ -103,7 +110,7 @@
 					<p class="mb-1">Target Date: 12th of June</p>
 					<small>30 Days to go</small>
 				</a>
-				<a href="#" class="list-group-item list-group-item-action goal">
+				<a href="#" class="list-group-item list-group-item-action goal shortGoal">
 					<div class="d-flex w-100 justify-content-between">
 						<div class="row">
 							<div class="col-sm-6">
@@ -125,7 +132,6 @@
 					<small>30 Days to go</small>
 				</a>
 			</div>
-
 			<div class="floatingAdd text-center align-middle">
 				<button type="button" class="btn btn-warning btn-large"><a href="./goals-newGoal.html"><i class="fas fa-plus"></i></a></button>
 			</div>
@@ -134,14 +140,39 @@
 			<table>
 				<tbody>
 					<tr>
-						<td id="activeNav"><a href="goals.html"><i class="fas fa-bullseye"></i></a></td>
-						<td id="passiveNav"><a href="stats.html"><i class="fas fa-chart-bar"></i></a></td>
-						<td id="passiveNav"><a href="index.html"><i class="fas fa-home"></i></a></td>
-						<td id="passiveNav"><a href="info.html"><i class="fas fa-info"></i></a></td>
-						<td id="passiveNav"><a href="settings.html"><i class="fas fa-cog"></i></a></td>
+						<td class="activeNav"><a href="goals.html"><i class="fas fa-bullseye"></i></a></td>
+						<td class="passiveNav"><a href="stats.html"><i class="fas fa-chart-bar"></i></a></td>
+						<td class="passiveNav"><a href="index.html"><i class="fas fa-home"></i></a></td>
+						<td class="passiveNav"><a href="info.html"><i class="fas fa-info"></i></a></td>
+						<td class="passiveNav"><a href="settings.html"><i class="fas fa-cog"></i></a></td>
 					</tr>
 				</tbody>
 			</table>
 		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript">
+			$('#filterLong').click(function(e) {
+				$('.shortGoal').hide();
+				$('.longGoal').show();
+
+				$('.filterBtn').removeClass('active');
+				$('#filterLong').addClass('active');
+			});
+			$('#filterShort').click(function(e) {
+				$('.shortGoal').show();
+				$('.longGoal').hide();
+
+				$('.filterBtn').removeClass('active');
+				$('#filterShort').addClass('active');
+			});
+			$('#filterAll').click(function(e) {
+				$('.shortGoal').show();
+				$('.longGoal').show();
+
+				$('.filterBtn').removeClass('active');
+				$('#filterAll').addClass('active');
+			});
+		</script>
 	</body>
 </html>
