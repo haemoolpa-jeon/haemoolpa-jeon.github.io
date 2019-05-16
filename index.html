@@ -16,13 +16,6 @@
 
         <!-- Begin page content -->
         <div class="container">
-<!--             <div class="col-lg-12 py-1">
-				<div class="card progressChart">
-					<div class="card-body">
-						<canvas id="chDonut1"></canvas>
-					</div>
-				</div>
-			</div> -->
         </div>
 
         <footer class="footer">
@@ -42,27 +35,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" source="js/main.js">
-        	var colors = ['#000','#c3e6cb','#fff','#000'];
-			var donutOptions = {
-				cutoutPercentage: 70, 
-			};
-			var chDonutData1 = {
-				datasets: [
-					{
-						backgroundColor: colors.slice(0,4),
-						borderWidth: 0,
-						data: [20, 30, 20, 50]
-					}
-				]
-			};
-			var chDonut1 = document.getElementById("chDonut1");
-				if (chDonut1) {
-				new Chart(chDonut1, {
-					type: 'pie',
-					data: chDonutData1,
-					options: donutOptions
-				});
-			}
         </script>
     </body>
 </html>
