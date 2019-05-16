@@ -185,10 +185,13 @@ background-color: #ea8685;
 .footer td {
 	font-size: 100px;
 	width:20%;
-	border-width: 1px;
-	border-color: black;
+	border-width: 0;
+	border-top-width: 1px;
+	border-color: white;
 	border-style: solid;
 }
+
+
 
 .activeNav {
 	background-color: #f5cd79;
