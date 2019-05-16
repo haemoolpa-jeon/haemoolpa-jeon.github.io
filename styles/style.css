@@ -35,18 +35,22 @@ background-color: #ea8685;
 	background-color: #ea8685;
 }
 
-a.list-group-item:hover {
-	background-color: #e66767;
+div.list-group-item:hover {
+	background-color: #ea8685;
 	color : white;	
 }
 
-a.list-group-item:active {
-	background-color: #e66767;
+div.list-group-item:active {
+	background-color: #ea8685;
 	color : white;	
 }
 
+div.list-group-item:visited {
+	background-color: #ea8685;
+	color : white;	
+}
 
-.list-group a {
+.list-group div {
 	background-color: #ea8685;
 	color: white;
 }
@@ -101,7 +105,7 @@ a.list-group-item:active {
 	font-size: 30px;
 }
 
-.progress-bar {
+div.progress-bar {
 	background-color: #f5cd79;
 }
 
