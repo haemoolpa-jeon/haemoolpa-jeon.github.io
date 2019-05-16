@@ -156,6 +156,12 @@ div.progress-bar {
 	color : white;
 }
 
+.btn-lg, .btn-lg:hover, .btn-lg:active, .btn-lg:focus {
+	background-color : #f5cd79;
+	color : white;
+	border-color : #f5cd79;
+}
+
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
