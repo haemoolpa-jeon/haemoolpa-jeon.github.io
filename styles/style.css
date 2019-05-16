@@ -3,16 +3,19 @@
 html {
 position: relative;
 min-height: 100%;
-background-color: #ea8685
+background-color: #ea8685;
+color: white
 }
 body {
   /* Margin bottom by footer height */
 margin-bottom: 60px;	
+background-color: #ea8685;
 }
 
 /* ---------------- Heading styles ---------------- */
 .heading {
-	background-color: #f78fb3;
+	background-color: #ea8685;
+	color: white;
 	position:fixed;
 	width:100%;
 	z-index: 100;
@@ -25,6 +28,17 @@ margin-bottom: 60px;
 /* ----------------- Goal styles ----------------- */
 .list-group {
 	margin-top: 10px; 
+	background-color: #ea8685;
+}
+
+a.list-group-item:hover {
+	background-color: #e66767;
+	color : white;	
+}
+
+.list-group a {
+	background-color: #ea8685;
+	color: white;
 }
 
 .goal h5 {
@@ -44,7 +58,19 @@ margin-bottom: 60px;
 
 .filters {
 	width:100%;
+	background-color: #ea8685;
 }
+
+.filter-nav {
+	background-color: #ea8685;
+}
+
+.btn-outline-primary {
+	background-color: #ea8685;
+	color : white;
+}
+
+
 
 .filter-nav button {
 	width:33%;
@@ -53,6 +79,10 @@ margin-bottom: 60px;
 
 .progressText {
 	font-size: 30px;
+}
+
+.progress-bar {
+	background-color: #f5cd79;
 }
 
 .floatingAdd {
@@ -69,6 +99,7 @@ margin-bottom: 60px;
 	height:200px;
 	font-size: 100px;
 	border-radius: 100px;
+	background-color: #f5cd79;
 }
 
 .newGoalForm legend {
