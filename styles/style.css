@@ -173,10 +173,10 @@ background-color: #ea8685;
 .footer td {
 	font-size: 100px;
 	width:20%;
-	border-width: 1px;
-	border-color: black;
-	border-style: solid;
+	border-width: 0;
 }
+
+
 
 .activeNav {
 	background-color: #f5cd79;
