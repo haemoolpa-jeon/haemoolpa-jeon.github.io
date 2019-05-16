@@ -266,3 +266,42 @@ background-color: #ea8685;
 	color : white;
 	border-color : #f5cd79;
 }
+
+/* ---------- Styling for settings Bank screen ---------- */
+.settings .list-group {
+	font-size: 80px;
+}
+
+.settings a{
+	padding:100px;
+	font-size: 80px;
+}
+
+.newBankAcc legend {
+	font-size: 100px;
+}
+
+.newBankAcc input {
+	height: 90px;
+	font-size: 40px;
+}
+
+.newBankAcc label {
+	height: 90px;
+	font-size: 40px;
+}
+
+.newBankAcc select {
+	height: 90px;
+	font-size: 40px;
+}
+
+.newBankAcc button {
+	height: 90px;
+	width: 400px;
+	font-size: 40px;
+}
+
+.newBankAcc a {
+	color: white;
+}
