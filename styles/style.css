@@ -146,15 +146,15 @@ background-color: #f5f5f5;
 	border-style: solid;
 }
 
-#activeNav {
+.activeNav {
 	background-color: #f5cd79;
 }
 
-#passiveNav {
+.passiveNav {
 	background-color: #c44569;
 }
 
-#passive:active {
+.passive:active {
 	background-color: #f19066;
 }
 
