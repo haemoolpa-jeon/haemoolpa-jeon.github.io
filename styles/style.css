@@ -41,6 +41,15 @@ margin-bottom: 60px;
 	font-size: 30px;
 }
 
+.filters {
+	width:100%;
+}
+
+.filter-nav button {
+	width:33%;
+	font-size: 40px;
+}
+
 .progressText {
 	font-size: 30px;
 }
