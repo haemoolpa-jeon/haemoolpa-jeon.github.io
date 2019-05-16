@@ -77,6 +77,16 @@ a.list-group-item:hover {
 	font-size: 40px;
 }
 
+.filter-nav button:active {
+	color: white;
+	background-color: #e66767;
+}
+
+.filter-nav button:hover {
+	color: white;
+	background-color: #e66767;
+}
+
 .progressText {
 	font-size: 30px;
 }
@@ -84,6 +94,8 @@ a.list-group-item:hover {
 .progress-bar {
 	background-color: #f5cd79;
 }
+
+
 
 .floatingAdd {
 	width:20%;
