@@ -12,6 +12,7 @@ body {
 margin-bottom: 60px;	
 background-color: #ea8685;
 font-family: 'Montserrat', sans-serif;
+
 }
 
 /* ---------------- Heading styles ---------------- */
@@ -326,3 +327,8 @@ background-color: #ea8685;
 .newBankAcc a {
 	color: white;
 }
+
+
+
+
+/* ---------- Styling for Home progress bar ---------- */
