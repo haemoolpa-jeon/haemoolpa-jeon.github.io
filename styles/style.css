@@ -4,12 +4,14 @@ html {
 position: relative;
 min-height: 100%;
 background-color: #ea8685;
-color: white
+color: white;
+font-family: 'Montserrat', sans-serif;
 }
 body {
   /* Margin bottom by footer height */
 margin-bottom: 60px;	
 background-color: #ea8685;
+font-family: 'Montserrat', sans-serif;
 }
 
 /* ---------------- Heading styles ---------------- */
@@ -23,10 +25,12 @@ background-color: #ea8685;
 	border-bottom-width: 1px;
 	border-color: white;
 	border-style: solid;
+	height: 150px;
 }
 
 .heading h1 {
-	font-size: 100px;
+	font-size: 90px;
+	padding-top: 10px;
 }
 
 /* ----------------- Goal styles ----------------- */
@@ -222,17 +226,26 @@ background-color: #ea8685;
 	color:white;
 }
 
-/* ------------- Styling for pie chart ------------- */
-.progressChart {
-	width:100%;
-	height:800px;
-	width:1600px;
-	padding:60px;
-	margin-left: -350px;
+/* ------------ Styles for stats screen ------------ */
+.spendingBreakdownItem {
+	font-size: 40px;
+	background-color:  #ea8685;
+	color:white;
 }
 
-#chDonut1 {
+.leftLi {
+	text-align: right;
 }
+
+.leftLi span {
+	float:left;
+}
+
+.statsPie {
+	width:100%;
+}
+
+
 
 /* ---------- Styling for settings screen ---------- */
 .setttings .list-group {
@@ -241,7 +254,9 @@ background-color: #ea8685;
 
 .settings a{
 	padding:100px;
+	background-color: #ea8685;
 	font-size: 80px;
+	color: white;
 }
 
 /* ------- Styling for the information screen ------- */
