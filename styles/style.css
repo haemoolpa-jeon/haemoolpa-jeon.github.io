@@ -342,7 +342,7 @@ background-color: #ea8685;
 #circle1{
     height: 825px;
     width: 825px;
-    background-color:#696878;
+    background-color:#e77f67;
     border-radius: 50%;
     position: absolute;
     top:25%;
@@ -372,3 +372,22 @@ background-color: #ea8685;
     transform: translate(-50%,-50%);
     z-index: -1;
 }
+
+
+.afterbar {
+	margin-top : 1100px;
+}
+
+p.afterbar1 {
+	color : white;
+	font-size : 100px;
+	font-weight: bold;
+	text-align: center;
+}
+
+p.afterbar2 {
+	color : #596275;
+	font-size : 70px;
+	text-align: center;
+}
+
