@@ -44,7 +44,7 @@ function fillCounter() {
 
   counter.lineWidth = 77;     // size of stroke
 
-  counter.fillStyle = '#fff';     // color that you want to fill in counter/circle
+  counter.fillStyle = '#f5cd79';     // color that you want to fill in counter/circle
 
   counter.strokeStyle = '#F5E0A9';    // Stroke Color
 
@@ -54,6 +54,12 @@ function fillCounter() {
 
   counter.fillText(no + '%', 520, 520);       //fillText(text,x,y);
 
+
+  //Next line
+  counter.fillStyle = 'white';
+  counter.font = "100px monospace"; 
+  counter.fillText("Current Status", 500, 650);       //fillText(text,x,y);
+
   counter.beginPath();
   counter.arc(500, 500, 450, pointToFill, diff / 10 + pointToFill);    //arc(x,y,radius,start,stop)
 
@@ -61,7 +67,7 @@ function fillCounter() {
 
   // now add condition
 
-  if (no >= 80) {
+  if (no >= 60) {
     clearTimeout(fill);     //fill is a variable that call the function fillcounter()
   }
   no++;
