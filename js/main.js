@@ -52,13 +52,18 @@ function fillCounter() {
 
   counter.font = "300px monospace";    //set font size and face
 
-  counter.fillText(no + '%', 520, 520);       //fillText(text,x,y);
+  counter.fillText(no + '%', 520, 420);       //fillText(text,x,y);
 
 
-  //Next line
+  //2nd line
+  counter.fillStyle = '#f8a5c2';
+  counter.font = "150px monospace"; 
+  counter.fillText("$744", 500, 570);       //fillText(text,x,y);
+
+  //3rd line
   counter.fillStyle = 'white';
-  counter.font = "100px monospace"; 
-  counter.fillText("Current Status", 500, 650);       //fillText(text,x,y);
+  counter.font = "100px monospace";
+  counter.fillText("3 Days Left", 500, 680);       //fillText(text,x,y);
 
   counter.beginPath();
   counter.arc(500, 500, 450, pointToFill, diff / 10 + pointToFill);    //arc(x,y,radius,start,stop)
@@ -67,7 +72,7 @@ function fillCounter() {
 
   // now add condition
 
-  if (no >= 60) {
+  if (no >= 62) {
     clearTimeout(fill);     //fill is a variable that call the function fillcounter()
   }
   no++;
