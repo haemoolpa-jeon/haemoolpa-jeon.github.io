@@ -7,12 +7,12 @@ background-color: #ea8685;
 color: white;
 font-family: 'Montserrat', sans-serif;
 }
+
 body {
-  /* Margin bottom by footer height */
+/* Margin bottom by footer height */
 margin-bottom: 60px;	
 background-color: #ea8685;
 font-family: 'Montserrat', sans-serif;
-
 }
 
 /* ---------------- Heading styles ---------------- */
@@ -332,3 +332,43 @@ background-color: #ea8685;
 
 
 /* ---------- Styling for Home progress bar ---------- */
+#counter{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+}
+#circle1{
+    height: 825px;
+    width: 825px;
+    background-color:#696878;
+    border-radius: 50%;
+    position: absolute;
+    top:25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+#shadowring{
+    height: 825px;
+    width: 825px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+}
+#circle2{
+    height: 980px;
+    width: 980px;
+    background-color:#BBD9DB;
+    border-radius: 50%;
+    position: absolute;
+    top:25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
