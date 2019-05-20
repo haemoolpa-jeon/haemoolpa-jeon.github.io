@@ -56,7 +56,7 @@ a.list-group-item:hover, a.list-group-item:active, a.list-group-item:visited {
 }
 
 .goal h5 {
-	font-size: 60px;
+	font-size: 45px;
 	margin:5px;
 }
 
@@ -83,7 +83,6 @@ a.list-group-item:hover, a.list-group-item:active, a.list-group-item:visited {
 	background-color: #ea8685;
 	color : white;
 }
-
 
 
 .filter-nav button {
