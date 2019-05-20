@@ -8,6 +8,11 @@
 		<!-- Custom styles for this template -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 		<link href="styles/style.css" rel="stylesheet">
+
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/stat.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -19,11 +24,8 @@
 		</div>
 		<!-- Begin page content -->
 		<div class="container content contentWithHeading">
-			<div class="row">
-				<div class="col-sm-12">
-					<img src="./img/statsPie.png" alt="" class="statsPie">
-				</div>
-			</div>
+			<div id="piechart"></div>
+
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="filter-nav">
@@ -38,20 +40,20 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="list-group">
-						<a href="./stats-food.html" class="list-group-item listg spendingBreakdownItem" style="background-color: rgb(86, 112, 226);">
-							<div class="leftLi"  style="background-color: rgb(86, 112, 226);"><span>Food</span> $200</div>
+						<a href="./stats-food.html" class="list-group-item listg spendingBreakdownItem" style="background-color: rgb(88, 129, 214);">
+							<div class="leftLi"  style="background-color: rgb(88, 129, 214);"><span>Food</span> $200</div>
 						</a>
-						<a href="#" class="list-group-item listg spendingBreakdownItem" style="background-color: rgb(239, 144, 106);">
-							<div class="leftLi"  style="background-color: rgb(239, 144, 106);"><span>Entertainment</span> $200</div>
+						<a href="#" class="list-group-item listg spendingBreakdownItem" style="background-color: rgb(238, 88, 51);">
+							<div class="leftLi"  style="background-color: rgb(238, 88, 51);"><span>Entertainment</span> $200</div>
 						</a>
-						<a href="#" class="list-group-item listg spendingBreakdownItem" style="background-color: rgb(89, 98, 116);">
-							<div class="leftLi"  style="background-color: rgb(89, 98, 116);"><span>Transport</span> $200</div>
+						<a href="#" class="list-group-item listg spendingBreakdownItem" style="background-color: rgb(255, 168, 36);">
+							<div class="leftLi"  style="background-color: rgb(255, 168, 36);"><span>Transport</span> $200</div>
 						</a>
-						<a href="#" class="list-group-item listg spendingBreakdownItem" style="background-color: rgb(246, 214, 152);">
-							<div class="leftLi"  style="background-color: rgb(246, 214, 152);"><span>Other</span> $200</div>
+						<a href="#" class="list-group-item listg spendingBreakdownItem" style="background-color: rgb(17, 159, 24);">
+							<div class="leftLi"  style="background-color: rgb(17, 159, 24);"><span>Other</span> $200</div>
 						</a>
-						<a href="#" class="list-group-item listg spendingBreakdownItem" style="background-color: rgb(232, 135, 135);">
-							<div class="leftLi"  style="background-color: rgb(232, 135, 135);"><span>Rent</span> $200</div>
+						<a href="#" class="list-group-item listg spendingBreakdownItem" style="background-color: rgb(153, 0, 153);">
+							<div class="leftLi"  style="background-color: rgb(153, 0, 153);"><span>Rent</span> $200</div>
 						</a>
 					</div>
 				</div>
@@ -70,5 +72,6 @@
 				</tbody>
 			</table>
 		</footer>
+
 	</body>
 </html>
