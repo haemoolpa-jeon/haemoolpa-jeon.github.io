@@ -256,13 +256,13 @@ background-color: #ea8685;
 
 /* ---------- Styling for settings screen ---------- */
 .setttings .list-group {
-	font-size: 80px;
+	font-size: 70px;
 }
 
 .settings a{
-	padding:100px;
+	padding:70px;
 	background-color: #ea8685;
-	font-size: 80px;
+	font-size: 70px;
 	color: white;
 }
 
