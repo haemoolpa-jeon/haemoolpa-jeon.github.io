@@ -160,7 +160,7 @@ div.progress-bar {
 	color : white;
 }
 
-.btn-lg, .btn-lg:hover, .btn-lg:active, .btn-lg:focus {
+.btn-lg, .btn-lg:hover, .btn-lg:active, .btn-lg:focus .btn-lg {
 	background-color : #f5cd79;
 	color : white;
 	border-color : #f5cd79;
@@ -280,6 +280,7 @@ background-color: #ea8685;
 
 .info a {
 	padding:40px;
+	color: white;
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
@@ -322,7 +323,9 @@ background-color: #ea8685;
 	color: white;
 }
 
-
+a {
+	color:white;
+}
 
 
 /* ---------- Styling for Home progress bar ---------- */
