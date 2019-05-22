@@ -426,3 +426,17 @@ input[type="checkbox"]:before {
 input:checked[type="checkbox"]:before {
 	left: 80px;
 }
+
+/* ---------- Styling for Settings Notification ---------- */
+.policy {
+	color : white;
+}
+
+.pol-head {
+	font-size: 70px;
+}
+
+.policy p {
+	font-size: 40px;
+	padding: 10px;
+}
