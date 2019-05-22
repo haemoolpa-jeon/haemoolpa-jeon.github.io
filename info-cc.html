@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Piggy Back</title>
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<!-- Custom styles for this template -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+		<link href="styles/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row heading">
+				<div class="text-center">
+					<h1>Credit Cards</h1>
+				</div>
+			</div>
+		</div>
+		<!-- Begin page content -->
+		<div class="container content contentWithHeading">
+			<div class="filter-nav">
+				<div class="btn-group filters">
+					<button id="filterAll" class="filterBtn btn btn-outline-primary active" data-filter="">All</button>
+					<button id="filterShort" class="filterBtn btn btn-outline-primary" data-filter="short">Credit</button>
+					<button id="filterLong" class="filterBtn btn btn-outline-primary" data-filter="long">Debit</button>
+				</div>
+			</div>
+        </div>
+			
+
+				
+
+		<footer class="footer">
+			<table>
+				<tbody>
+					<tr>
+						<td class="passiveNav"><a href="goals.html"><i class="fas fa-bullseye"></i></a></td>
+						<td class="passiveNav"><a href="stats.html"><i class="fas fa-chart-bar"></i></a></td>
+						<td class="passiveNav"><a href="index.html"><i class="fas fa-home"></i></a></td>
+						<td class="activeNav"><a href="info.html"><i class="fas fa-info"></i></a></td>
+						<td class="passiveNav"><a href="settings.html"><i class="fas fa-cog"></i></a></td>
+					</tr>
+				</tbody>
+			</table>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript">
+			$('#filterLong').click(function(e) {
+				$('.shortGoal').hide();
+				$('.longGoal').show();
+				$('.filterBtn').removeClass('active');
+				$('#filterLong').addClass('active');
+			});
+			$('#filterShort').click(function(e) {
+				$('.shortGoal').show();
+				$('.longGoal').hide();
+				$('.filterBtn').removeClass('active');
+				$('#filterShort').addClass('active');
+			});
+			$('#filterAll').click(function(e) {
+				$('.shortGoal').show();
+				$('.longGoal').show();
+				$('.filterBtn').removeClass('active');
+				$('#filterAll').addClass('active');
+			});
+		</script>
+	</body>
+</html>
