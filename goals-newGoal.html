@@ -6,14 +6,13 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 		<!-- Custom styles for this template -->
-		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 		<link href="styles/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="container">
 			<div class="row heading">
 				<div class="text-center">
-					<h1>New Goal</h1>
+					<h1>New Goals</h1>
 				</div>
 			</div>
 		</div>
@@ -43,18 +42,18 @@
 							<div class="input-group">
 								<input id="buttondropdown" name="buttondropdown" class="form-control form-control-lg" placeholder="Amount to save" type="text">
 								<div class="input-group-btn">
-									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-									Currency
-									<span class="caret"></span>
-									</button>
-									<ul class="dropdown-menu pull-right">
-										<li><a href="#">AUD</a></li>
-										<li><a href="#">USD</a></li>
-										<li><a href="#">CAD</a></li>
-										<li><a href="#">YEN</a></li>
-									</ul>
+                            		<select id="selectbasic" name="selectbasic" class="form-control form-control-lg">
+										<option value="1">AUD</option>
+										<option value="2">USD</option>
+										<option value="3">KRW</option>
+										<option value="4">JPY</option>
+										<option value="5">CNY</option>
+										<option value="6">CAD</option>
+										<option value="7">TWD</option>
+										<option value="7">HKD</option>
+                            		</select>
 								</div>
-							</div>
+                        	</div>
 						</div>
 					</div>
 					<!-- Select Basic -->
@@ -76,14 +75,10 @@
 							<div class="input-group">
 								<input id="buttondropdown" name="buttondropdown" class="form-control form-control-lg" placeholder="Interest Rate %" type="text">
 								<div class="input-group-btn">
-									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-									Per
-									<span class="caret"></span>
-									</button>
-									<ul class="dropdown-menu pull-right">
-										<li><a href="#">Month</a></li>
-										<li><a href="#">Year</a></li>
-									</ul>
+                            		<select id="selectbasic" name="selectbasic" class="form-control form-control-lg">
+										<option value="1">Month</option>
+										<option value="2">Year</option>
+                            		</select>
 								</div>
 							</div>
 						</div>
