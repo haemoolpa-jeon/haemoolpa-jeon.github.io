@@ -443,3 +443,7 @@ input:checked[type="checkbox"]:before {
 	font-size: 40px;
 	padding: 10px;
 }
+
+.input-group-btn {
+	width: 500px;
+}
