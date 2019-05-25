@@ -15,6 +15,10 @@ background-color: #ea8685;
 font-family: 'Montserrat', sans-serif;
 }
 
+a a:hover a:active a:focus a:visited {
+	color : white;
+}
+
 /* ---------------- Heading styles ---------------- */
 .heading {
 	background-color: #ea8685;
@@ -448,4 +452,14 @@ input:checked[type="checkbox"]:before {
 
 .input-group-btn {
 	width: 500px;
+}
+
+.list-group a {
+	color:white;
+}
+
+.Food {
+	margin-top: 10px; 
+	color : white;
+	font-size : 80px;
 }
