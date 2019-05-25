@@ -463,3 +463,9 @@ input:checked[type="checkbox"]:before {
 	color : white;
 	font-size : 80px;
 }
+
+.CreditCards {
+	margin-top: 10px; 
+	color : white;
+	font-size : 80px;
+}
