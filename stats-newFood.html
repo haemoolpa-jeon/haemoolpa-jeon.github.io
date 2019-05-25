@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Piggy Back</title>
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<!-- Custom styles for this template -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+		<link href="styles/style.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row heading">
+				<div class="text-center">
+					<h1>New Food</h1>
+				</div>
+			</div>
+		</div>
+		<!-- Begin page content -->
+		<div class="container content contentWithHeading">
+			<form class="form-horizontal newGoalForm">
+				<fieldset>
+					<!-- Select Basic -->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="selectbasic">Type of Meal</label>
+						<div class="col-md-4">
+							<select id="selectbasic" name="selectbasic" class="form-control form-control-lg">
+								<option value="1">Breakfast</option>
+								<option value="2">Morning Tea</option>
+								<option value="3">Lunch</option>
+								<option value="4">Afternoon Tea</option>
+								<option value="5">Dinner</option>
+								<option value="6">Dessert</option>
+                                <option value="7">Supper</option>
+                                <option value="8">Coffee</option>
+                                <option value="9">Beverage</option>
+                                <option value="10">Snack</option>
+                                <option value="11">Other</option>
+							</select>
+						</div>
+					</div>
+					<!-- Text input-->
+					<div class="form-group">
+						<div class="col-md-4">
+                        <label class="col-md-4 control-label" for="selectbasic">Store Name</label>
+							<input id="textinput" name="textinput" type="text" placeholder="Location" class="form-control form-control-lg input-md">
+						</div>
+					</div>
+					<!-- Button Drop Down -->
+					<div class="form-group">
+						<div class="col-md-4">
+                        <label class="col-md-4 control-label" for="selectbasic">Amount Spent</label>
+							<div class="input-group">
+								<input id="buttondropdown" name="buttondropdown" class="form-control form-control-lg" placeholder="Amount to spent" type="text">
+								<div class="input-group-btn">
+                            		<select id="selectbasic" name="selectbasic" class="form-control form-control-lg">
+										<option value="1">AUD</option>
+										<option value="2">USD</option>
+										<option value="3">KRW</option>
+										<option value="4">JPY</option>
+										<option value="5">CNY</option>
+										<option value="6">CAD</option>
+										<option value="7">TWD</option>
+										<option value="7">HKD</option>
+                            		</select>
+								</div>
+                        	</div>
+						</div>
+					</div>
+					<!-- Select Basic -->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="selectbasic">Paid with</label>
+						<div class="col-md-4">
+							<select id="selectbasic" name="selectbasic" class="form-control form-control-lg">
+								<option value="1">Commonwealth Bank</option>
+								<option value="2">NAB</option>
+								<option value="3">ING</option>
+								<option value="4">St. George</option>
+								<option value="5">Westpac</option>
+							</select>
+						</div>
+					</div>
+					<!-- Button Drop Down -->
+					<!-- Button -->
+					<div class="form-group">
+						<div class="col-md-4 text-center">
+							<button id="singlebutton" name="singlebutton" class="btn btn-primary"><a href="./stats-food-monday.html">Submit</a></button>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+        
+		<footer class="footer">
+			<table>
+				<tbody>
+					<tr>
+						<td class="passiveNav"><a href="goals.html"><i class="fas fa-bullseye"></i></a></td>
+						<td class="activeNav"><a href="stats.html"><i class="fas fa-chart-bar"></i></a></td>
+						<td class="passiveNav"><a href="index.html"><i class="fas fa-home"></i></a></td>
+						<td class="passiveNav"><a href="info.html"><i class="fas fa-info"></i></a></td>
+						<td class="passiveNav"><a href="settings.html"><i class="fas fa-cog"></i></a></td>
+					</tr>
+				</tbody>
+			</table>
+		</footer>
+
+	</body>
+</html>
