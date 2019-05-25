@@ -469,3 +469,22 @@ input:checked[type="checkbox"]:before {
 	color : white;
 	font-size : 80px;
 }
+
+.Help {
+	font-size : 100px;
+	color : white;
+}
+
+.Help h1 {
+	font-size : 100px;
+	align-content: center;
+	align-self: auto;
+	text-align : center;
+}
+
+.Help p {
+	font-size : 50px;
+	align-content: center;
+	align-self: auto;
+	text-align : center;
+}
