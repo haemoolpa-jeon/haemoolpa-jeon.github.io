@@ -13,7 +13,7 @@
 		<div class="container">
 			<div class="row heading">
 				<div class="text-center">
-					<h1>Savings</h1>
+					<h1>Credit Cards</h1>
 				</div>
 			</div>
 		</div>
@@ -22,14 +22,66 @@
 			<div class="filter-nav">
 				<div class="btn-group filters">
 					<button id="filterAll" class="filterBtn btn btn-outline-primary active" data-filter="">All</button>
-					<button id="filterShort" class="filterBtn btn btn-outline-primary" data-filter="short">Long Term</button>
-					<button id="filterLong" class="filterBtn btn btn-outline-primary" data-filter="long">Short Term</button>
+					<button id="filterShortTerm" class="filterBtn btn btn-outline-primary" data-filter="short">ShortTerm</button>
+					<button id="filterLongTerm" class="filterBtn btn btn-outline-primary" data-filter="long">LongTerm</button>
 				</div>
 			</div>
-        </div>
 			
+			<div class="list-group">
+				<div class="list-group-item list-group-item-action goal LongTerm">
+					<div class="d-flex w-100 justify-content-between">
+						<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">LongTerm Saving 1</h5>
+						</div>
+					<p class="mb-1"><a href ="#">Click here for more information</a></p>
+					</div>
+				</div>
+			</div>
 
-				
+			<div class="list-group">
+				<div class="list-group-item list-group-item-action goal ShortTerm">
+					<div class="d-flex w-100 justify-content-between">
+						<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">ShortTerm Saving 1</h5>
+						</div>
+					<p class="mb-1"><a href ="#">Click here for more information</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="list-group">
+				<div class="list-group-item list-group-item-action goal LongTerm">
+					<div class="d-flex w-100 justify-content-between">
+						<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">LongTerm Saving 2</h5>
+						</div>
+					<p class="mb-1"><a href ="#">Click here for more information</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="list-group">
+				<div class="list-group-item list-group-item-action goal ShortTerm">
+					<div class="d-flex w-100 justify-content-between">
+						<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">ShortTerm Saving 2</h5>
+						</div>
+					<p class="mb-1"><a href ="#">Click here for more information</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="list-group">
+				<div class="list-group-item list-group-item-action goal ShortTerm">
+					<div class="d-flex w-100 justify-content-between">
+						<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">ShortTerm Saving 3</h5>
+						</div>
+					<p class="mb-1"><a href ="#">Click here for more information</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<footer class="footer">
 			<table>
@@ -47,21 +99,21 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript">
-			$('#filterLong').click(function(e) {
-				$('.shortGoal').hide();
-				$('.longGoal').show();
+			$('#filterLongTerm').click(function(e) {
+				$('.ShortTerm').hide();
+				$('.LongTerm').show();
 				$('.filterBtn').removeClass('active');
 				$('#filterLong').addClass('active');
 			});
-			$('#filterShort').click(function(e) {
-				$('.shortGoal').show();
-				$('.longGoal').hide();
+			$('#filterShortTerm').click(function(e) {
+				$('.ShortTerm').show();
+				$('.LongTerm').hide();
 				$('.filterBtn').removeClass('active');
 				$('#filterShort').addClass('active');
 			});
 			$('#filterAll').click(function(e) {
-				$('.shortGoal').show();
-				$('.longGoal').show();
+				$('.LongTerm').show();
+				$('.ShortTerm').show();
 				$('.filterBtn').removeClass('active');
 				$('#filterAll').addClass('active');
 			});
