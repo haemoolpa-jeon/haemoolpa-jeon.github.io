@@ -22,13 +22,67 @@
 			<div class="filter-nav">
 				<div class="btn-group filters">
 					<button id="filterAll" class="filterBtn btn btn-outline-primary active" data-filter="">All</button>
-					<button id="filterShort" class="filterBtn btn btn-outline-primary" data-filter="short">Direct</button>
-					<button id="filterLong" class="filterBtn btn btn-outline-primary" data-filter="long">Indirect</button>
+					<button id="filterDirect" class="filterBtn btn btn-outline-primary" data-filter="short">Direct</button>
+					<button id="filterIndirect" class="filterBtn btn btn-outline-primary" data-filter="long">Indirect</button>
 				</div>
 			</div>
-        </div>
 			
 
+			<div class="list-group">
+				<div class="list-group-item list-group-item-action goal Direct">
+					<div class="d-flex w-100 justify-content-between">
+						<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">Direct 1</h5>
+						</div>
+					<p class="mb-1"><a href ="#">Click here for more information</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="list-group">
+				<div class="list-group-item list-group-item-action goal Direct">
+					<div class="d-flex w-100 justify-content-between">
+						<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">Direct 2</h5>
+						</div>
+					<p class="mb-1"><a href ="#">Click here for more information</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="list-group">
+				<div class="list-group-item list-group-item-action goal Indirect">
+					<div class="d-flex w-100 justify-content-between">
+						<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">Indirect 1</h5>
+						</div>
+					<p class="mb-1"><a href ="#">Click here for more information</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="list-group">
+				<div class="list-group-item list-group-item-action goal Indirect">
+					<div class="d-flex w-100 justify-content-between">
+						<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">Indirect 2</h5>
+						</div>
+					<p class="mb-1"><a href ="#">Click here for more information</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="list-group">
+				<div class="list-group-item list-group-item-action goal Indirect">
+					<div class="d-flex w-100 justify-content-between">
+						<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">Indirect 3</h5>
+						</div>
+					<p class="mb-1"><a href ="#">Click here for more information</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
 				
 
 		<footer class="footer">
@@ -47,21 +101,21 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript">
-			$('#filterLong').click(function(e) {
-				$('.shortGoal').hide();
-				$('.longGoal').show();
+			$('#filterIndirect').click(function(e) {
+				$('.Direct').hide();
+				$('.Indirect').show();
 				$('.filterBtn').removeClass('active');
 				$('#filterLong').addClass('active');
 			});
-			$('#filterShort').click(function(e) {
-				$('.shortGoal').show();
-				$('.longGoal').hide();
+			$('#filterDirect').click(function(e) {
+				$('.Direct').show();
+				$('.Indirect').hide();
 				$('.filterBtn').removeClass('active');
 				$('#filterShort').addClass('active');
 			});
 			$('#filterAll').click(function(e) {
-				$('.shortGoal').show();
-				$('.longGoal').show();
+				$('.Direct').show();
+				$('.Indirect').show();
 				$('.filterBtn').removeClass('active');
 				$('#filterAll').addClass('active');
 			});
