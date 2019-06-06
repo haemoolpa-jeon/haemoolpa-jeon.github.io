@@ -425,3 +425,46 @@ footer .contact-us {
     border : 1.5px red solid;
     border-radius: 8px;
 }
+
+.forum-search {
+    width : 200px;
+    height : 30px;
+    border-radius : 10px;
+    border : blue 2px solid;
+    background : white;
+    position: relative;
+    margin : 0px auto;
+    top : 10%;
+    
+
+}
+
+.search2 {
+    width: 300px auto;
+    height : 25px;
+    border : none;
+}
+
+/* Gallery */
+
+.gallery {
+    margin : 10px;
+    border : 1px solid grey;
+    float : left;
+    width : 180px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery:hover {
+    border : 2px solid red;
+    width : 300px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
