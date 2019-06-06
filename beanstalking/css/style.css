@@ -1,0 +1,427 @@
+/* Styling for Bean Stalking */
+
+/* Main Styling */
+
+
+html {
+    font-size : 14px;
+    font-family: 'Titillium Web', sans-serif;
+    height: 100%;
+    scroll-behavior: smooth;    
+}
+
+body {
+    background : rgba(52, 152, 219,0.5);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin : 0;
+    padding : 0;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Nav Bar */
+
+nav {
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family : 'Muli', sans-serif;
+    background-color: #1abc9c;
+    position: relative;
+    width : 100%;
+    opacity: 0.9;
+    text-align : center;
+}
+
+.nav_ref a:hover {
+    background : #1abc9c;
+    color: white;
+}
+
+.logo {
+    color : white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 35px;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+}
+
+.logo a {
+    color : white;  
+}
+
+.nav_ref {
+    display: flex;
+    position: relative;
+    background-color: white;    
+    color : #2ecc71;
+    justify-content: space-around;
+    width : 40%;
+    padding : 0.5rem;
+    margin : 1rem;
+}
+
+.nav_ref li {
+    list-style: none;
+}
+
+.nav_ref a {
+    color : #2ecc71;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size : 20px;
+    padding : 5px 5px;
+}
+
+nav ul {
+    float : left;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position : relative;
+}
+
+nav ul li a {
+    display : block;
+    font-size : 15px;
+    text-decoration: none;
+    padding : 20px 14px;
+}
+
+nav ul li a {
+    display : block;
+    font-size : 14px;
+    text-decoration: none;
+    padding : 22px 14px;
+}
+
+nav ul li ul {
+    position : absolute;
+    display : none;
+    background : white;
+    text-align : center;
+    padding : 10px;
+    border-radius : 0px 0px 5px 5px;
+    border : 2px solid rgba(22, 160, 133,1.0);
+}
+
+nav ul li:hover ul {
+    position : absolute;
+    display : block;
+    background : white;
+    text-align : center;
+    padding : 10px;
+}
+
+nav ul li ul li {
+    width : 200px;
+    font-size : 10px;
+}
+
+nav ul li ul li a {
+    padding : 14px 14px;
+}
+
+nav ul li ul li a:hover {
+    background : #1abc9c;
+    color : white;
+}
+
+/* Search Button */
+
+.searchbar {
+    position: relative;
+    background : #16a085;
+    height : 40px;
+    border-radius: 40px;
+    padding : 10px;
+}
+
+
+.searchbar:hover > .search-input {
+    width: 200px;
+    padding : 0 6px;
+}
+
+.searchbar:hover > .search-button {
+    background : white;
+    color : #e67e22;
+    float: right;
+    position: relative;
+}
+
+.search-button {
+    display : flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width : 40px;
+    height : 40px;
+    border-radius: 50%;
+    background: #16a085;
+    color : white;
+    transition: 0.4s;
+}
+
+.search-input {
+    border: none;
+    background: none;
+    outline: none;
+    float: right;
+    padding : 0;
+    color : white;
+    font-size : 16px;
+    width: 0px;
+    transition: 0.4s;
+    line-height: 40px;
+}
+
+.log-in {
+    background : white;
+    border-radius: 10px;
+    width : 70px;
+    height : 50px;
+    border : 0px;
+    margin : 5px;
+}
+
+.log-in a {
+    color : rgba(231, 76, 60,1.0);
+    font-size : 14px;
+}
+
+.login:hover .login-form {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    background : white;
+    right : 7%;
+    color : black;
+    display : block;
+    border-radius : 10px;
+}
+
+.login .login-form {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    background : white;
+    right : 7%;
+    color : black;
+    display : none;
+}
+
+
+.login .log-in > form {
+    margin : 25px auto;
+    font-size : 12px;
+}
+
+.login-form input[type = "text"], .login-form input[type = "password"] {
+    border : 2px solid;
+    border-radius: 5px;
+    text-align: center;
+    width : 200px;
+}
+
+.login-form input[type = "submit"] {
+    background : rgba(22, 160, 133,1.0);
+    color : white;
+    margin : 3px;
+    padding : 3px;
+    border-radius: 10px;
+    width : 80px;
+}
+
+/* Body */
+
+article {
+    padding-top: 50px;
+    overflow : auto;
+    padding-bottom : 100px;
+    width: 100%;
+    color : rgba(211, 84, 0,1.0);
+    text-align: center;
+    position : relative;
+    clear : both;
+}
+
+article h1 { 
+    font-size : 70px;
+}
+
+article h2 {
+    font-size : 50px;
+}
+
+article .start-here {
+    width : 300px;
+    height : 200px;
+    border-radius: 50px;
+    background : rgba(230, 126, 34,1.0);
+    font-size : 45px;
+    border : 3px red solid;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+article .start-here a {
+    color : white;
+}
+
+.ground {
+    width : 100%;
+    height : 200px;
+    background : rgba(139,69,19, 0.7);
+    color : white;
+}
+
+div .jack {
+    position : relative;
+    top : 100%;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100px); }
+}
+
+/* Footer */
+
+.footer-main {
+    width : 100%;
+    margin : auto;
+    height : auto;
+    padding: 20px 0px;
+    position : relative;
+    clear : both;
+    margin-top : -100px;
+    background-color: #7f8c8d;
+    display : block;
+    overflow: auto;
+}
+
+.back_to_top {
+    position : relative;
+    width : 100%;
+    margin : auto;
+    height : auto;
+    background : #95a5a6;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-family : 'Dosis', sans-serif;
+    transition : 0.3s;
+}
+
+footer a {
+    color : white;
+}
+
+footer .copyright {
+    color : white;
+    text-align: center;
+    justify-content: baseline;
+}
+
+footer .footer-nav {
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    text-align : center;
+}
+
+footer .footer-nav ul{
+    list-style: none;
+    display : flex;
+    font-size : 20px;
+    margin : 5px;
+    padding : 5px;
+}
+
+footer .footer-nav ul li{
+    margin : 5px;
+    padding : 5px;
+}
+
+footer .contact-us {
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    text-align : center;
+    font-size: 18px;
+    color : white;
+}
+
+
+
+
+/* Policy */
+
+.policy .policy-in p {
+    font-size: 20px;
+    text-align: center;
+    word-wrap: normal;
+    width : 400px;
+    display: flex;
+    justify-content: center;
+    margin-right : auto;
+    margin-left : auto;
+}
+
+
+/* Forum */
+
+
+.forum-lists {
+    border : 1px black solid;
+    border-radius: 5px;
+    width : 90%;
+    background: rgba(243, 156, 18,0.3);
+    font-size : 18px;
+    position : relative;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin : 0px auto;
+
+}
+
+.forum-lists tbody {
+    color : black;
+    background : white;
+    border : grey solid 1px;
+}
+
+.forum-main {
+    height : 1000px;
+}
+
+.new-topic {
+    background : rgba(241, 196, 15,0.6);
+    color : rgba(192, 57, 43,0.7);
+    font-size : 20px;
+    width : 80px;
+    height : 50px;
+    position : relative;
+    right : -40%;
+    bottom : 30px;
+    font-weight : bold;
+    border : 1.5px red solid;
+    border-radius: 8px;
+}
