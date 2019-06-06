@@ -39,9 +39,26 @@ a a:hover a:active a:focus a:visited {
 }
 
 /* ----------------- Goal styles ----------------- */
+a.list-group-item-action {
+	background-color : #ea8685;
+}
+
+.list-group-item-action a{
+	background-color: #ea8685;
+}
+
+
 .list-group {
 	margin-top: 10px; 
 	background-color: #ea8685;
+}
+
+.list-group-item {
+	background-color : #ea8685;
+}
+
+.list-group-item-action {
+	background-color : #ea8685;
 }
 
 div.list-group-item:hover, div.list-group-item:active, div.list-group-item:visited  {
