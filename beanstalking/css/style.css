@@ -26,7 +26,7 @@ a {
 
 /* Nav Bar */
 
-nav {
+.main_nav {
     display : flex;
     justify-content: space-around;
     align-items: center;
@@ -36,6 +36,7 @@ nav {
     width : 100%;
     opacity: 0.9;
     text-align : center;
+    z-index: 9999999;
 }
 
 .nav_ref a:hover {
@@ -96,12 +97,6 @@ nav ul li a {
     padding : 20px 14px;
 }
 
-nav ul li a {
-    display : block;
-    font-size : 14px;
-    text-decoration: none;
-    padding : 22px 14px;
-}
 
 nav ul li ul {
     position : absolute;
@@ -118,12 +113,15 @@ nav ul li:hover ul {
     display : block;
     background : white;
     text-align : center;
-    padding : 10px;
+    z-index: 999999;
 }
 
 nav ul li ul li {
     width : 200px;
-    font-size : 10px;
+    padding : 2px;
+    margin : 2px;
+    font-size : 10px;    
+    z-index: 999999;
 }
 
 nav ul li ul li a {
@@ -248,10 +246,11 @@ article {
     overflow : auto;
     padding-bottom : 100px;
     width: 100%;
-    color : rgba(211, 84, 0,1.0);
+    color : white;  
     text-align: center;
     position : relative;
     clear : both;
+    z-index: 1;
 }
 
 article h1 { 
@@ -279,10 +278,12 @@ article .start-here a {
 
 .ground {
     width : 100%;
-    height : 200px;
+    height : 250px;
     background : rgba(139,69,19, 0.7);
     color : white;
 }
+
+/* Jumping Jack */
 
 div .jack {
     position : relative;
@@ -298,6 +299,30 @@ div .jack {
     0% { transform: translateY(0); }
     100% { transform: translateY(100px); }
 }
+
+/* left right Arrow */
+
+.move_right {
+    font-size : 50px;
+    color : red;
+    position : absolute;
+    right : 5%;
+    top : 50%;
+}
+
+.move_left {
+    font-size : 50px;
+    color : red;
+    position : absolute;
+    left : 5%;
+    top : 50%;
+}
+
+.move_left i, .move_right i {
+    color : red;
+}
+
+
 
 /* Footer */
 
@@ -367,8 +392,6 @@ footer .contact-us {
     font-size: 18px;
     color : white;
 }
-
-
 
 
 /* Policy */
@@ -445,24 +468,428 @@ footer .contact-us {
 
 /* Gallery */
 
-.gallery {
+.gallery_home {
+    margin : 10px 50px;
+}
+
+#gallery {
     margin : 10px;
     border : 1px solid grey;
     float : left;
     width : 180px;
+    transition : 1s;
 }
 
-.gallery img {
+#gallery img {
     width: 100%;
     height: auto;
+    padding: 0.5px;
 }
 
-.gallery:hover {
-    border : 2px solid red;
-    width : 300px;
+#gallery:hover {
+    transform: scale(1.1);
 }
 
-div.desc {
+
+div #gallerytext {
     padding: 15px;
     text-align: center;
 }
+
+/* Gallery Filter nav */
+.gallery-filter {
+    display : flex;
+    width : 38%;
+    height : 50px;
+    justify-content: center;
+    align-items: center;
+    font-family : 'Muli', sans-serif;
+    background-color: #fab1a0;
+    position: relative;
+    opacity: 0.9;
+    text-align : center;
+    z-index: 9999999;
+    color : #0984e3;
+    border-radius: 5%;
+    border : 2px #e17055 solid;
+    left : 35%;
+}
+
+.filter_nav {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    width : 40%;
+    padding : 0.5rem;
+    
+}
+
+.filter_nav li {
+    list-style: none;
+    padding : 5px;
+    border : 2px #fdcb6e solid;
+}
+
+.filter_nav a {
+    color : #0984e3;   
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size : 20px;
+    padding : 5px 5px;
+    font-weight: 400;
+}
+
+.gallery-filter ul {
+    float : left;
+}
+
+
+
+/* Seed */
+
+.seed {
+    height : 150px;
+    text-align: center;
+    justify-content: center;
+    overflow: auto;
+    font-size : 20px;
+    line-height: 40px;
+    
+}
+
+.seed a {
+    font : white;
+    text-align: center;
+    justify-content: center;
+}
+
+.click-seed {
+    position: relative;
+    color : white;
+    font-size : 20px;
+}
+
+.beanstalk-seed {
+    width : 50px;
+    height : 50px;
+    border-radius: 50%;
+    background : palegoldenrod;
+    text-align: center;
+    justify-content: center;
+    font : white;
+    font-size : 30px;
+    position: relative;
+    display: flex;
+}
+
+
+
+.step1-tips {
+    color : rgba(230, 103, 103,1.0);
+    font-size : 30px;
+    display : flex;
+    overflow: auto;
+}
+
+.light-tips {
+    width : 50px;
+    height : 50px;
+    transition : 0.5s;
+}
+
+.light-tips:hover {
+    transform:scale(1.5);
+}
+
+
+/* Popup Box */
+
+/* watering can popup */
+
+.wateringcan-popup {
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4); 
+}
+    
+.wateringcan-content {
+    background-color: rgba(84, 109, 229,1.0);
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    color : white;                     
+}
+    
+.wateringcan-close {
+    color: rgba(225, 95, 65,0.8);
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.wateringcan-close:hover, .wateringcan-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#trigger-wateringcan {
+    width : 200px;
+    position : relative;
+    left : 10%;
+    background : rgba(52, 152, 219,0.5);
+    transform: rotate(10deg);
+    transition : 1s;
+}
+
+#trigger-wateringcan:hover {
+    transform: rotate(-20deg);
+}
+
+.wateringcan2 {
+    width : 100px;
+}
+
+/* seed popup */
+
+.seed-popup {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+    
+.seed-content {
+    background-color: rgba(245, 205, 121,1.0);
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    color : white;                     
+}
+    
+.seed-close {
+    color: rgba(225, 95, 65,0.8);
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.seed-close:hover, .seed-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#trigger-seed {
+    position : relative;
+    
+
+}
+.seed-button {
+    background : papayawhip;
+    width : 70px;
+    height : 70px;
+    border-radius: 50%;
+    position: relative;
+    border : 2px brown solid;
+    font-size : 20px;
+    line-height: 40px;
+    top : 10px;
+}
+
+.bean1 {
+    width : 300px;
+}
+
+/* seed popup */
+
+.s1t1-popup {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+    
+.s1t1-content {
+    background-color: rgba(245, 205, 121,1.0);
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    color : white;                     
+}
+    
+.s1t1-close {
+    color: rgba(225, 95, 65,0.8);
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.s1t1-close:hover, .s1t1-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#trigger-s1t1 {
+    position : relative;
+    
+
+}
+.s1t1-button {
+    background : yellow;
+    width : 50px;
+    height : 50px;
+    border-radius: 10%;
+    position: relative;
+    border : 2px orangered solid;
+    font-size : 20px;
+    line-height: 40px;
+    top : 40px;
+    right : 170px;
+}
+
+.soaking_bean {
+    width : 400px;
+}
+
+.click-s1t1 {
+    position: relative;
+    color : gold;
+    font-size : 30px;
+    right : 170px;
+    top : 10px;
+}
+
+/* seed popup */
+
+.pot-popup {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+    
+.pot-content {
+    background-color: rgba(245, 205, 121,1.0);
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    color : white;                     
+}
+    
+.pot-close {
+    color: rgba(225, 95, 65,0.8);
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.pot-close:hover, .pot-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pot-button {
+    background : yellow;
+    width : 50px;
+    height : 50px;
+    border-radius: 10%;
+    position: relative;
+    border : 2px orangered solid;
+    font-size : 20px;
+    line-height: 40px;
+    top : 40px;
+    right : 170px;
+}
+
+.click-pot {
+    position: relative;
+    color : gold;
+    font-size : 30px;
+    right : 170px;
+    top : 10px;
+}
+
+#trigger-pot {
+    width: 200px;
+    position : absolute;
+    right : 10%;
+    top : 85%;
+}
+
+.pot2 {
+    width : 300px;
+}
+
+/* Music Player */
+
+#musicplayer {
+    border : blue 1.5px solid;
+    border-radius: 5px; 
+}
+
+#musicplaylist {
+    list-style: none;
+}
+
+#musicplaylist li a{
+    color : black;
+    text-decoration: none;
+}
+
+#musicplaylist .now-playing a{
+    color : blue;
+}
+
+
+/* Step 2 */
+
+.beanstalk {
+    width : 100%;
+    margin : auto;
+    height : auto;
+    padding: 20px 0px;
+    position : relative;
+    clear : both;
+    margin-bottom : -220px;
+    display : block;
+    overflow: auto;
+}
+
+.stem {
+    position : relative;
+    justify-content: baseline;
+
+}
+

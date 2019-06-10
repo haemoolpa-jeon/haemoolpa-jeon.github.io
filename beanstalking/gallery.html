@@ -5,17 +5,19 @@
         <Title>Bean Stalking</Title>
 
         <link href="./css/style.css" rel = "stylesheet">
+        <link href="./css/lightbox.min.css" rel="stylesheet">
+        <link href="./css/lightbox.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Dosis|Lobster|Muli|Roboto+Mono|Titillium+Web&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/480ded9489.js"></script>
-        <script src="/js/main.js"></script>
+        <script src = "./js/lightbox-plus-jquery.min.js"></script>
     </head>
 
     
 
     <body>
 
-        <nav>
+        <nav class="main_nav">
             <div class = logo>
                 <a href = "./index.html">Bean Stalking</a>
             </div>
@@ -95,15 +97,64 @@
         </nav>
 
         <article class = "gallery-main">
-            <div class="gallery">
-                <a target="_blank" href="./images/sky.jpg">
-                    <img src="./images/sky.jpg" alt="sky" width="600" height="400">
-                </a>
-                <div class="desc">Add a description of the image here</div>
+
+            <div class="gallery-filter">
+                <ul class="filter_nav">
+                    <li>
+                        <a href="#" id="filterAll">All</a>
+                    </li>
+                    <li>
+                        <a href="#" id="filterStep1">Step1</a>
+                    </li>
+            
+                    <li>
+                        <a href="#" id="filterStep2">Step2</a>
+                    </li>
+            
+                    <li>
+                        <a href="#" id="filterStep3">Step3</a>
+                    </li>
+            
+                    <li>
+                        <a href="#" id="filterStep4">Step4</a>
+                    </li>
+            
+                    <li>
+                        <a href="#" id="filterOthers">Others</a>
+                    </li>
+                </ul>
             </div>
+
+            <div class = gallery_home>
+                <div id=gallery class="galleryStep1">
+                    <a href = "./images/beans1.jpg" data-lightbox="galleryslide" data-title = "Beans">
+                        <img src="./images/beans1.jpg" alt="beans" width="600" height="400">
+                    </a>
+                    <div id="gallerytext">An image of bean from step 1</div>
+                </div>
+
+                <div id=gallery class="galleryStep1">
+                    <a href = "./images/soaking_beans.jpg" data-lightbox="galleryslide" data-title = "Soaking Beans in Water">
+                        <img src="./images/soaking_beans.jpg" alt="sky" width="600" height="400">
+                    </a>
+                    <div id="gallerytext">An image of bean in water from step 1</div>
+                </div>
+
+                <div id=gallery class="galleryStep1">
+                    <a href = "./images/seed_pot.jpg" data-lightbox="galleryslide" data-title = "Seeding in pots">
+                    <img src="./images/seed_pot.jpg" alt="sky" width="600" height="400">
+                    </a>
+                    <div id="gallerytext">An image of bean in pot from step 1</div>
+                </div>
+            </div>
+                
+
+
 
             
         </article>
+
+        
 
         <div class = "ground">
             
@@ -136,6 +187,7 @@
             </div>
         </footer>
 
+        <script src="./js/gallery.js"></script>
     </body>
 
 
