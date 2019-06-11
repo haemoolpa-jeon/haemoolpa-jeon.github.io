@@ -87,7 +87,7 @@
             
 
             <div class = "searchbar">
-                <input class = "search-input" type = "text" name = "" placeholder="">
+                <input class = "search-input" type = "text" name = "search" placeholder="Search">
                 <a class = "search-button" href = "#">
                     <i class="fas fa-search"></i>
                 </a>
@@ -95,11 +95,59 @@
         </nav>
 
         <article>
-            <div class = "beanstalk">
+            
+            <h1>Step 2</h1>
+            <h2>Germination of seed</h2>
+            <h3>Sprouts and roots coming out of seed</h3>
+            
+            <!--Section 2 Tips-->
+            <div class="step2-tips">
+                <h3>Important Tips!</h3>
+                <div>
+                    <img class="light-tips2" src="./images/lightbulb1.png" alt="Tips">
+            
+                    <div class="s2t1">
+                        <button id="trigger-s2t1" class="s2t1-button">Tip1</button>
+                        <p class="click-s2t1"> Click me! </p>
+                    </div>
+            
+                    <div id="s2t1-on" class="s2t1-popup">
+            
+                        <div class="s2t1-content">
+                            <span class="s2t1-close">X Close</span>
+                            <h1>Soak seeds before</h1>
+                            <img class="soaking_bean" src="./images/soaking_beans.jpg" alt="Soaking bean seeds">
+                            <h2>Germination</h2>
+                            <p>When you soak seeds before planting, you can decrease the seed germination time significantly.</p>
+                            <h3><a href="https://www.gardeningknowhow.com/garden-how-to/propagation/seeds/soaking-seeds.htm">View more details here</a> 
+                            </h3> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div>
+
+
+            <div class="leaf_left1">
+                <img src="./images/leaf_left.png" alt="left leaf of shoot">
+                <p>Why Leaf Grow</p>
+                <p>Click Me!</p>
+            </div>
+
+            <div class="leaf_right1">
+                <img src="./images/leaf_right.png" alt="right of shoot">
+                <p>What happened <br> here</p>
+                <p>Click Me!</p>
+            </div>
+
+            <div id = "beanstalk">
                 <div class = "stem">
-                    <img src = "./images/stem1.png">
+                    <img src = "./images/stem.png" alt = "stem of shoot">
+                    <p>Click Me!</p>
                 <div>
             <div>
+
+            
+            
 
             <div class ="move_left">
                 <a href = "./step1.html"><i class="fas fa-chevron-left"></i></a>
@@ -111,6 +159,23 @@
 
         <div class = "ground">
             
+            <div class="seedling">
+                <img src = "./images/seedling.png" id="trigger-seed">
+                <p class="click-seed"> Click me! </p>
+            </div>
+            
+            <div id="seed-on" class="seed-popup">
+            
+                <div class="seed-content">
+                    <span class="seed-close">X Close</span>
+                    <h1>Seeds</h1>
+                    <img class="bean1" src="./images/beans1.jpg" alt="bean seeds">
+                    <h2>You can use any seeds</h2>
+                    <h3>View video on how to put seeds in the ground</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ssj2C5BnJdM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+                </div>
+            </div>
 
         </div>
 
@@ -129,10 +194,20 @@
                     <li>
                         <a href="./About us.html">About us</a>
                     </li>
+
+                    <li>
+                        <a href="./acknowledgements.html">Acknowledgements</a>
+                    </li>
             </div>
 
             <div class = "contact-us">
                 <p>Contact Us</p>
+                <div class = "contact_icons">
+                    <a href = "https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href = "https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+                    <a href = "https://www.facebook.com"><i class="fab fa-twitter-square"></i></a>
+                    <a href="mailto:haemoolpa-jeon@gmail.com?Subject=Email%For%More%Info" target="_top"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
 
             <div class ="copyright">
@@ -140,6 +215,8 @@
             </div>
         </footer>
 
+        <script type="text/javascript" src="./js/step2.js"></script>
+        <script src="./js/jquery-3.4.1.min.js"></script>
     </body>
 
 
